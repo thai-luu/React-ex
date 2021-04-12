@@ -12,7 +12,7 @@ class TodoItem extends Component {
     console.log(item);
     return (
       <label className="panel-block">
-        <input type="checkbox" onClick={() => this.props.handleOnClick(item.key)} checked={item.done}/>
+         <input type="checkbox" onChange={() => this.props.handleOnClick(item.key)} checked={item.done}/>
         <span className={this.props.item.done ? 'has-text-grey-light' : ''}>
           {this.props.item.text}
         </span>
